@@ -1,0 +1,19 @@
+.p_lightgreen_underline{
+    color: lightgreen;
+    text-decoration: underline;
+}
+.p_underline{
+    text-decoration: underline;
+}
+span{
+    color: red;
+    font-style:italic;
+}
+.img_left{
+    float: left;
+}
+.img_right{
+    float: right;
+}
+
+
