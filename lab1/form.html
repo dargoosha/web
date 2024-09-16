@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Виконала студентка групи КН-32 Герасимчук Д. С.</h2>
+    <ul>
+      <li>
+        <a href="lab1.html"> На головну </a>
+      </li>
+    </ul>
+    <h3>Завдання</h3>
+    <p>
+      Необхідно розробити форму для реєстрації учасника художнього форуму.
+      Необхідно заповнити наступні данні:
+    </p>
+    <ul>
+      <li>
+        дані про реєстрацію, включають логін, пароль, електрону адресу,
+        улюбленого художника (обирається зі списку);
+      </li>
+      <li>
+        особисті дані, включають улюблений колір, посилання на веб- сторінку з
+        власним портфоліо, улюблений жанр у живописі (обирається зі
+        списку),докладний опис власних художніх вподобань.
+      </li>
+    </ul>
+    <form action="ewpage.html" method="POST">
+      <fieldset>
+        <legend>Дані про реєстрацію</legend>
+        <label
+          >Логін
+          <input id="login" type="text">
+        </label>
+        <label
+          >Пароль
+          <input id="password" type="password">
+        </label>
+        <label
+          >Електронна адреса
+          <input id="email" type="email">
+        </label>
+        <label
+          >Улюблений художник
+          <select>
+            <option>Ван Гог</option>
+            <option>Мане</option>
+            <option>Мунк</option>
+            <option>Пікассо</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Дані про реєстрацію</legend>
+        <label
+          >Улюблений колір
+          <input id="color" type="color">
+        </label>
+        <label
+          >Посилання на веб-сторінку
+          <input id="link" type="url">
+        </label>
+        <label
+          >Улюблений жанр у живописі
+          <select>
+            <option>Портрет</option>
+            <option>Пейзаж</option>
+            <option>Натюрморт</option>
+            <option>Абстракціонізм</option>
+          </select>
+        </label>
+        <br>
+        <label
+          >Докладний опис власних художніх вподобань
+          <br>
+          <textarea rows="5" cols="40"></textarea>
+        </label>
+      </fieldset>
+      <button type="submit">Відправити</button>
+    </form>
+  </body>
+</html>
