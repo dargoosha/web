@@ -15,5 +15,8 @@ span{
 .img_right{
     float: right;
 }
+img{
+    margin: 10px;
+}
 
 
