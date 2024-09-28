@@ -13,6 +13,7 @@ body{
     font-family: var(--font-family-text);
     font-size: var(--font-size-p);
 }
+
 .header { 
     height: var(--height-header);
     font-size: var(--font-size-h1);
@@ -57,11 +58,7 @@ body{
     font-weight: bold;
     text-decoration: underline;
 }
-/*.text__border{
-    text-shadow: 1px 1px 1px var(--color-white), 0 1px 1px var(--color-white), 
-    -1px 0 1px var(--color-white), 
-    0 -1px 1px var(--color-white);;
-}*/
+
 .content {
     width: var(--width-main);
     height: var(--height-content);
@@ -115,6 +112,7 @@ body{
 }
 .content p{
     margin-top: 0px;
+    margin-left: 30px;
 }
 .artist p {
     width: 500px;
