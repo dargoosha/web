@@ -1,0 +1,37 @@
+/* base.css */
+
+/* Імпортуємо шрифти з Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+:root {
+    /* Кольори */
+    --color-dark: #231E0A;
+    --color-red: #9A1F00;
+    --color-white: #FFFFFF;
+
+    /* Шрифти та їх розміри */
+    --font-family-h: "Comfortaa";
+    --font-family-text: "Comfortaa";
+
+    --font-size-h1: 60px;
+    --font-size-h2: 46px;
+    --font-size-menu: 36px;
+    --font-size-footer: 16px;
+    --font-size-p: 22px;
+
+    /* Розміри сайту */
+    --width: 1440px;
+    --width-sidebar: 500px;
+    --width-main: 938px;
+    --width-footer: 500px;
+    --height-sidebar: 1050px;
+    --height-menu: 130px;
+    --height-header: 200px;
+    --height-footer: 200px;
+    --height-content: 1252px;
+
+    /* відстань з лівого краю для меню та заголовку */
+    --padding-left: 120px;
+    /* Поля для текстових блоків */
+    --padding-text: 50px;
+}

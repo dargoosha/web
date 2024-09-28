@@ -1,0 +1,186 @@
+@import url(base.css);
+@import url(reset.css);
+
+body{
+    margin: auto;
+    max-width: var(--width);
+}
+
+.container{
+    width: var(--width);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+}
+.header { 
+    height: var(--height-header);
+    font-size: var(--font-size-h1);
+    padding-top: 70px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: url("../images/header.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    z-index: 2;
+    position: relative; /* Текст буде над фоном */
+    color: white; /* Додатково можна змінити колір тексту, щоб він був видимий на фоні */
+}
+
+.menu {
+    height: var(--height-menu);
+    padding-left: var(--padding-left);
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-menu);
+    padding-top: 25px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: url("../images/menu.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.menu ul li {
+    display: inline-block;
+    padding-right: 125px;
+}
+.menu ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*.text__border{
+    text-shadow: 1px 1px 1px var(--color-white), 0 1px 1px var(--color-white), 
+    -1px 0 1px var(--color-white), 
+    0 -1px 1px var(--color-white);;
+}*/
+.content {
+    width: var(--width-main);
+    height: var(--height-content);
+    background: linear-gradient(90deg, rgba(35,30,10,1) 30%, rgba(154,31,0,1) 100%);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+
+.content h2 {
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h2);
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.content .venue{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+}
+.venue img{
+    margin-right: var(--padding-text);
+    width: 350px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content .concert-info{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+}
+.concert-info img{
+    margin-left: 150px;
+    width: 300px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.content .artist{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+
+}
+.artist img{
+    margin-left: var(--padding-text);
+    margin-right: var(--padding-text);
+    width: 30%;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content p{
+    margin-top: 0px;
+}
+.artist p {
+    width: 500px;
+}
+.sidebar{
+    height: var(--height-sidebar);
+    background: linear-gradient(90deg, rgba(154,31,0,1) 0%, rgba(35,30,10,1) 67%);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    
+}
+
+.sidebar h2{
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h2);
+    padding-top: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+.sidebar p{
+    text-align: left;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.footer{
+    height: var(--height-footer);
+    background: linear-gradient(90deg, rgba(154,31,0,1) 0%, rgba(35,30,10,1) 67%);
+}
+.footer p{
+    margin: 0 auto;
+    font-size: var(--font-size-footer);
+    justify-content: baseline;
+    display: flex;
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-left: 50px;
+    text-align: center;
+
+}
+.side{
+    float: right;
+    height: var(--height-menu);
+    width: var(--width-sidebar);
+
+}
+.header-background-img{
+    /*<div class="header-background-img"></div>
+    <div class="header-img header-background-img"></div>*/
+    background: url("../images/header.jpg") no-repeat;
+    background-size: cover;
+    height: var(--height-header);
+}
+.header-img{
+    mix-blend-mode: overlay;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+/*.header img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-size: cover;
+    object-fit: fill;
+    mix-blend-mode: overlay;
+}*/
