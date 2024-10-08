@@ -2,8 +2,7 @@
 @import url(reset.css);
 @import url(style.css);
 
-.header{
-
+header {
     width: var(--width-header);
     height: var(--height-header);
     font-size: 15px;
@@ -11,26 +10,25 @@
     padding-left: 80px;
     z-index: 0;
 }
-.header h1{
+
+header h1 {
     font-family: var(--font-family-h);
     font-size: var(--font-size-h1);
     padding-top: 150px;
     padding-left: 139px;
     font-weight: bold;
 }
-.img-header{
 
+.img-header {
     z-index: 0;
     position: absolute;
     width: 687px;
     height: 654px;
     left: 808px;
     top: 167px;
-
-
 }
 
-.menu{
+.menu {
     position: absolute;
     width: 663px;
     height: 60px;
@@ -41,25 +39,27 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
     color: #202336;
 }
-.menu button{
+
+.menu button {
     width: 100px;
     float: right;
     border-radius: 8px;
-    background-color: #FB8F1D; 
+    background-color: #FB8F1D;
     margin-right: 10px;
-    padding: 10px ; 
-    color: white; 
-    border: none; 
+    padding: 10px;
+    color: white;
+    border: none;
     cursor: pointer;
 }
-.menu button:hover{
+
+.menu button:hover {
     border: 1px solid #FB8F1D;
     background-color: white;
     color: #FB8F1D;
 }
+
 .menu ul li a {
     float: right;
     font-family: 'Inter';
@@ -69,13 +69,14 @@
     line-height: 19px;
     color: #B8BECD;
     padding-right: 20px;
-    padding-top:10px;
-
+    padding-top: 10px;
 }
-.menu ul li a:hover{
-    color:#202336;
+
+.menu ul li a:hover {
+    color: #202336;
     font-weight: bold;
 }
+
 .finder {
     font-family: 'Inter';
     margin-top: 30px;
@@ -84,47 +85,49 @@
     width: 471px;
     height: 344px;
 }
-  .finder h3{
+
+.finder h3 {
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 40px;
 }
-  .selection {
+
+.selection {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: var(--color-gray);
     font-family: 'Inter';
     font-size: 15px;
-    
-        select {
-            width: 220px;
-            height: 52px; 
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            appearance: none; /* Remove default arrow on select elements */
-            
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: 16px;
-        }
 }
-.finder button{
+
+.selection select {
+    width: 220px;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px;
+}
+
+.finder button {
     margin-top: 40px;
     width: 180px;
     height: 52px;
     border-radius: 8px;
-    background-color: #FB8F1D; 
+    background-color: #FB8F1D;
     margin-right: 10px;
-    padding: 10px ; 
-    color: white; 
-    border: none; 
+    padding: 10px;
+    color: white;
+    border: none;
     cursor: pointer;
 }
-.finder button:hover{
+
+.finder button:hover {
     border: 1px solid #FB8F1D;
     background-color: white;
     color: #FB8F1D;
 }
-

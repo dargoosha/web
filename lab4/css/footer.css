@@ -1,7 +1,7 @@
 @import url(base.css);
 @import url(reset.css);
 @import url(style.css);
-.footer{
+footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
