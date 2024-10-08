@@ -1,0 +1,22 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(header.css);
+@import url(explore.css);
+@import url(destinations.css);
+@import url(guides.css);
+@import url(testimonials.css);
+@import url(trending.css);
+@import url(footer.css);
+
+
+body{
+    max-width: var(--width);
+}
+
+.container{
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: var(--font-family-text);
+}

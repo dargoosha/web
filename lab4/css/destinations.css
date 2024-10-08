@@ -1,0 +1,86 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.destinations{
+    width: var(--width-dest);
+    height: var(--height-dest);
+    font-family: 'Inter';
+    font-size: 17px;
+    margin-left: 121px;
+    padding-left: 120px;
+    margin-top: 250px;
+    h2{
+        font-family: "Playfair Display";
+        font-size: var(--font-size-h2);
+        font-weight: 700;
+        padding-bottom: 120px;
+        position:absolute;
+    }
+    a {
+        float: right;
+        color: var(--color-orange);
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.destimg{
+    padding-top: 100px;
+}
+
+.d1{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    position: absolute;
+    background: url("../images/featured1.jpg");
+    background-size: cover;
+}
+.d2{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 286px;
+    position: absolute;
+    background: url("../images/featured2.jpg");
+    background-size: cover;
+}
+.d3{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 572px;
+    position: absolute;
+    background: url("../images/featured3.png");
+    background-size: cover;
+}
+.d4{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 858px;
+    position: absolute;
+    background: url("../images/featured4.jpg");
+    background-size: cover;
+}
+.destinations .textdest{
+    height: 56px;
+    width: 120px;
+    background-color: #FFFFFF;
+    margin-top: 281px;
+    padding-top: 10px ;
+    font-weight: bold;
+    border-radius: 0px 6px 0px 0px;
+    font-size: 17px;
+    span{
+        font-weight: 400;
+        font-size: 15px;
+        color: #80918E;
+
+    }
+}
+
+

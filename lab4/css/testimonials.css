@@ -1,0 +1,82 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.test{
+    margin-left: 235px;
+    margin-top: 248px;
+
+    width: var(--width-test);
+    height: var(--height-test);
+    display: flex;
+  
+}
+.textt{  
+    h2{
+        font-size: var(--font-size-h2);
+        font-family: "Playfair Display";
+        font-weight: 700;
+        padding-bottom: 150px;
+    }
+    img{
+        width: 189px;
+        height: 24px;
+    }
+    h5{
+        font-size: 24px;
+        font-family: "Inter";
+        padding-top: 30px;
+        line-height: 1.5;
+    }
+    p{
+        padding-top: 20px;
+        font-family: 'Inter';
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.5;
+        span{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+.img-test{
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 522.98px;
+    width: 416.84px;
+}
+.imgt{
+
+    padding-top: 200px;
+    padding-left: 200px;
+    background: url("../images/test.jpg");
+    background-size: cover;
+    margin: 14px;
+    border-radius: 10px;
+    width: 384px;
+    height: 491px;
+}
+.arrow{
+    width: 132px;
+    height: 60px;
+    float: right;
+    margin-top: 235px;
+    padding-top: 15px;
+    padding-left: 22px;
+    border-radius: 6px 0px 0px 0px;
+    background-color: #FFFF;
+    button{
+        border-color: #D7D7D7;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        color: #D7D7D7;
+        border-radius: 50%;
+        border: 1px solid #D7D7D7;
+    }
+    button:hover{
+        color: black;
+        border-color: black;
+    }
+}

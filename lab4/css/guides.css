@@ -1,0 +1,50 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.guides{
+    margin-left: 240px;
+    margin-top: 173px ;
+    width: var(--width-guides);
+    height: var(--height-guides);
+
+}
+.guides .img-guides{
+    padding-top: 8px;
+    padding-left: 550px;
+    position: absolute;
+    float: right;
+}
+.guides .text{
+    padding-top: 152px;
+    h2{
+        font-family: var(--font-family-h);
+        font-size: var(--font-size-h2);
+        font-weight: bold;
+    }
+    p{
+        font-family: 'Inter';
+        font-size: 17px;
+        padding-top: 30px;
+        color: #AFB0B9;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+    button{
+        font-family: 'Inter';
+        margin-top: 48px;
+        width: 164px;
+        height: 52px;
+        border-radius: 8px;
+        background-color: #FB8F1D; 
+        margin-right: 10px;
+        padding: 10px ; 
+        color: white; 
+        cursor: pointer;
+    }
+    button:hover{
+        border: 1px solid #FB8F1D;
+        background-color: white;
+        color: #FB8F1D;
+    }
+}

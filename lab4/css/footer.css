@@ -1,0 +1,78 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color:#F9F9FB;
+    height: 482px;
+    margin-top: 196px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Inter';
+    font-size: 18px;
+    color: #848484;
+    background-color: #F9F9FB;
+
+    h4{
+        color: black;
+        font-weight: 700;
+        font-size: 19px;
+        padding-bottom: 20px;
+    }
+    a {
+        color: #848484;
+        line-height: 2.2;
+        display: block;
+    }
+    a:hover{
+        color:black
+    }
+   
+}
+.plan{
+    margin-left: 100px;
+    width: 391px;
+    height: 327px;
+    padding-top: 100px;
+    margin-right: 100px;
+    p{
+        padding-top: 30px;
+
+    }
+
+    img{
+        width: 44px;
+        height: 44px;
+    };
+}
+.destinate, .shop, .interest {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.social-img{
+    width: 248px;
+    height: 23px;
+    
+}
+.social{
+    background-color: #F9F9FB;
+    display: flex;
+    height: 30px;
+    width: var(--width);
+    align-items: center;
+    justify-content: center;
+}
+.dsi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:961px;
+}

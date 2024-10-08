@@ -1,0 +1,86 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.trending{
+    width: var(--width-stories);
+    height: var(--height-stories);
+    font-family: 'Inter';
+    font-size: 15px;
+    margin-top: 250px;
+    margin-left: 143px;
+    h2{
+        font-family: "Playfair Display";
+        font-size: var(--font-size-h2);
+        font-weight: 700;
+        padding-left: 98px;
+        padding-bottom: 120px;
+        position:absolute;
+    }
+    a {
+        float: right;
+        color: var(--color-orange);
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.trendtext{
+    padding-top: 100px;
+    padding-left: 98px;
+    display: flex;
+    a {
+        float: left;
+        color: var(--color-orange);
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    h4{
+        padding-top: 10px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    p{
+        padding-top: 10px;
+        line-height: 1.5;
+        color: #7D7987;
+    }
+    img{    border-radius: 8px 8px 0px 0px;
+
+    }
+}
+.t1{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    position: absolute;
+}
+.t2{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 286px;
+    position: absolute;
+}
+.t3{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 572px;
+    position: absolute;
+}
+.t4{
+    width: 261px;
+    height: 337px;
+    border-radius: 8px;
+    margin-left: 858px;
+    position: absolute;
+}
+
+
