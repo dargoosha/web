@@ -1,0 +1,61 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.explore{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    height: auto;
+    max-height: var(--height-explore);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.explore .text{
+    float: right; 
+    text-align: left;
+    h2{
+        font-family: var(--font-family-h);
+        font-size: var(--font-size-h2);
+    
+        font-weight: bold;
+    
+    }
+    p{
+        font-family: 'Inter';
+        font-size: 17px;
+        padding-top: 30px;
+        color: #AFB0B9;
+        line-height: 1.8;
+    }
+    button{
+        font-family: 'Inter';
+        margin-top: 40px;
+        width: 180px;
+        height: 52px;
+        border-radius: 8px;
+        background-color: #FB8F1D; 
+        margin-right: 10px;
+        padding: 10px ; 
+        color: white; 
+        border: none; 
+        cursor: pointer;
+    }
+    button:hover{
+        border: 1px solid #FB8F1D;
+        background-color: white;
+        color: #FB8F1D;
+    }
+}
+
+@media (max-width: 965px) {
+    .explore img {
+        display: none;
+    }
+    .explore {
+        grid-template-columns: 1fr;
+        
+    }
+}

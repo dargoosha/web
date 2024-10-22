@@ -1,0 +1,93 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: var(--width-stories);
+    margin: 100px auto;
+}
+
+.trending h2 {
+    font-family: "Playfair Display";
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    padding-bottom: 20px; 
+}
+
+.trending a {
+    color: var(--color-orange);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.trending a:hover {
+    text-decoration: underline;
+}
+
+.trendtext {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px; 
+
+    a {
+        float: left;
+        color: var(--color-orange);
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    h4{
+        padding-top: 10px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    p{
+        padding-top: 10px;
+        line-height: 1.5;
+        color: #7D7987;
+    }
+    img{    border-radius: 8px 8px 0px 0px;
+
+    }
+}
+
+.trendtext div {
+    width: calc(25% - 20px); 
+    max-width: 261px; 
+    border-radius: 8px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.trendtext img {
+    width: 100%; 
+    border-radius: 8px 8px 0 0;
+}
+ 
+@media (max-width: 1024px) {
+    .trendtext div {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .trendtext div {
+        width: calc(100% - 20px); 
+    }
+}
+
+.trending-upper-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

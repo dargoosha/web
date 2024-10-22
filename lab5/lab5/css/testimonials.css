@@ -1,0 +1,101 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.test {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    place-items: center;
+    height: auto;
+    width: 80%;
+    margin: 100px auto; 
+    gap: 20px; 
+}
+
+.textt {
+    padding: 20px;
+}
+
+.textt h2 {
+    font-size: var(--font-size-h2);
+    font-family: "Playfair Display";
+    font-weight: 700;
+    padding-bottom: 30px; 
+}
+
+.textt img {
+    width: 189px;
+    height: 24px;
+}
+
+.textt h5 {
+    font-size: 24px;
+    font-family: "Inter";
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.textt p {
+    padding-top: 20px;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.textt p span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.img-test {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imgt {
+    background: url("../images/test.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 384px; 
+    height: auto;
+    aspect-ratio: 384 / 491; 
+    position: relative; 
+}
+
+.arrow {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.arrow button {
+    border-color: #D7D7D7;
+    width: 40px;
+    height: 40px;
+    color: #D7D7D7;
+    border-radius: 50%;
+    border: 1px solid #D7D7D7;
+    background-color: white; 
+}
+
+.arrow button:hover {
+    color: black;
+    border-color: black;
+}
+
+@media (max-width: 768px) {
+    .test {
+        grid-template-columns: 1fr; 
+    }
+    .textt {
+        text-align: center; 
+    }
+}
+

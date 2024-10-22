@@ -1,0 +1,64 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.guides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    height: var(--height-guides);
+    width: 80%;
+    margin: 150px auto; 
+}
+
+
+.guides .text {
+    text-align: left;
+}
+
+.guides .text h2 {
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+}
+
+.guides .text p {
+    font-family: 'Inter';
+    font-size: 17px;
+    padding-top: 30px;
+    color: #AFB0B9;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.guides .text button {
+    font-family: 'Inter';
+    margin-top: 48px;
+    width: 164px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #FB8F1D; 
+    margin-right: 10px;
+    padding: 10px; 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+}
+
+.guides .text button:hover {
+    border: 1px solid #FB8F1D; 
+    background-color: white;
+    color: #FB8F1D;
+}
+
+@media (max-width: 965px) {
+    .guides img {
+        display: none;
+    }
+
+    .guides {
+        grid-template-columns: 1fr;
+        
+    }
+}

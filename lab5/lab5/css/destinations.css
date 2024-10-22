@@ -1,0 +1,92 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(style.css);
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: var(--width-dest);
+    height: auto;
+    font-family: 'Inter';
+    font-size: 17px;
+    margin: 100px auto;
+}
+
+.destinations h2 {
+    font-family: "Playfair Display";
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    padding-bottom: 20px; 
+}
+
+.destinations a {
+    color: var(--color-orange);
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.destimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+    width: 100%;
+}
+
+.destimg div {
+    flex: 1 1 calc(25% - 20px); 
+    min-width: 261px; 
+    height: 337px;
+    border-radius: 8px;
+    background-size: cover;
+    position: relative;
+}
+
+.d1 {
+    background: url("../images/featured1.jpg");
+}
+
+.d2 {
+    background: url("../images/featured2.jpg");
+}
+
+.d3 {
+    background: url("../images/featured3.png");
+}
+
+.d4 {
+    background: url("../images/featured4.jpg");
+}
+
+.textdest {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 56px !important; 
+    width: 120px !important;
+    background-color: #FFFFFF;
+    position: absolute; 
+    margin-top: 281px;
+    font-weight: bold;
+    border-radius: 0px 6px 0px 0px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.textdest span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #80918E;
+}
+
+.destination-upper-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

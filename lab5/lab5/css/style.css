@@ -1,0 +1,25 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(header.css);
+@import url(explore.css);
+@import url(destinations.css);
+@import url(guides.css);
+@import url(testimonials.css);
+@import url(trending.css);
+@import url(footer.css);
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: var(--font-family-text);
+    margin: 0 auto;
+}
