@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Захист від темних мистецтв</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <h1>Defence Against the Dark Arts</h1>
+        <nav class="header__menu">
+          <ul>
+            <li><a class="menu__item" href="#general">General</a></li>
+            <li><a class="menu__item" href="#classrooms">Classrooms</a></li>
+            <li><a class="menu__item" href="#partner">Professors</a></li>
+          </ul>
+          <form action="search" class="search-form">
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="Search.."
+                name="search"
+                class="search-input"
+              />
+              <button type="submit" class="search-button">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="7.84442"
+                    cy="7.84442"
+                    r="5.99237"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.0122 12.3235L14.3616 14.6667"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </nav>
+      </header>
+      <main class="page__content page__content--primary">
+        <h2>Classrooms</h2>
+        <p>
+          Defence Against the Dark Arts classes took place on the first-floor,
+          Class 104 in the North Tower and Classroom 3C on the third-floor. In
+          Classroom 3C, an iron chandelier hung from the ceiling, as well as a
+          dragon's skeleton. On one end of the classroom stood a projector that
+          was activated by magic. Several desks and tables could be found in the
+          classroom as well as some sets of large windows.
+        </p>
+        <h2>Professors</h2>
+        <a href="#lockhart">Gilderoy Lockhart</a>
+        <p>
+          Professor Gilderoy Lockhart, O.M. (26 January 1964) was a half-blood
+          wizard, a Ravenclaw student at Hogwarts School of Witchcraft and
+          Wizardry, and later a famous wizarding celebrity who authored many
+          books on dark creatures and his supposed encounters with them.
+        </p>
+        <a href="#dolores">Dolores Umbridge</a>
+        <p>
+          Dolores Jane Umbridge (26 August 1961 or earlier) was a half-blood
+          witch and a British Ministry of Magic bureaucrat who served as Senior
+          Undersecretary to the Minister for Magic under Ministers Cornelius
+          Fudge, Rufus Scrimgeour, and Pius Thicknesse.
+        </p>
+        <a href="#snape">Severus Snape</a>
+        <p>
+          Professor Severus Snape (9 January 1960 - 2 May 1998) was an English
+          half-blood wizard serving as Potions Master (1981-1996), Head of
+          Slytherin House (1981-1997), Defence Against the Dark Arts professor
+          (1996-1997), and Headmaster (1997-1998) of the Hogwarts School of
+          Witchcraft and Wizardry as well as a member of the Order of the
+          Phoenix and a Death Eater. His double life played an extremely
+          important role in both of the Wizarding Wars against Voldemort.
+        </p>
+      </main>
+      <section class="page__content page__content--secondary">
+        <h2>General information</h2>
+        <p>
+          Defence Against the Dark Arts (abbreviated as DADA) was a subject and
+          core class taught at Hogwarts School of Witchcraft and Wizardry and
+          Ilvermorny School of Witchcraft and Wizardry in which students studied
+          and learnt how to defend themselves against all aspects of the Dark
+          Arts, including dark creatures, curses, hexes and jinxes (dark
+          charms), and duelling.<br /><br />
+
+          The position of Defence Against the Dark Arts professor at the school
+          was once rumoured to be jinxed, as no teacher could hold the post for
+          more than a year without suffering an unpleasant fate. Tom Riddle
+          jinxed the position because Albus Dumbledore did not give him the job
+          when he applied for it. The fact that no teacher has lasted longer
+          than a year meant that the subject had numerous Professors over the
+          years.<br /><br />
+
+          Ilvermorny began teaching the subject in the 17th century. Harry
+          Potter would occasionally deliver Defence Against the Dark Arts
+          lectures at Hogwarts in his adulthood.
+        </p>
+      </section>
+      <aside class="page__images">
+        <h2>Professors</h2>
+        <div class="slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+
+          <div class="slides">
+            <div class="prof__img" id="slide-1">
+              <img src="images/lockhart.png" alt="" id="lockhart" />
+              <p>Gilderoy Lockhart</p>
+            </div>
+            <div class="prof__img" id="slide-2">
+              <img src="images/dolores.png" alt="" id="dolores" />
+              <p>Dolores Umbridge</p>
+            </div>
+            <div class="prof__img" id="slide-3">
+              <img src="images/snape.png" alt="" id="snape"/>
+              <p>Severus Snape</p>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+      </aside>
+      <nav class="page__menu">
+        <div class="sidebar__social">
+          <ul >
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <footer class="page__footer">
+        <p>© 2024 Defence Against the Dark Arts. All rights resolved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
