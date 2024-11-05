@@ -1,9 +1,9 @@
 const movies = [ 
-    { title: "Фільм 1", cinema: "Кінотеатр A", hall: "Зал 1", startDate: "2024-10-20" },
-    { title: "Фільм 2", cinema: "Кінотеатр B", hall: "", startDate: "2024-11-03" },
-    { title: "Фільм 3", cinema: "Кінотеатр C", hall: "Зал 2", startDate: "2024-11-05" },
-    { title: "Фільм 4", cinema: "Кінотеатр D", hall: "Зал 1, Зал 2", startDate: "2024-11-04" },
-    { title: "Фільм 5", cinema: "Кінотеатр D", hall: "Зал 2", startDate: "2024-11-07" },
+    { title: "Гаррі Поттер", cinema: "Мультиплекс", hall: "Зал 1", startDate: "2024-10-20" },
+    { title: "Аватар", cinema: "Оскар", hall: "", startDate: "2024-11-03" },
+    { title: "Інтерстеллар", cinema: "Жовтень", hall: "Зал 2", startDate: "2024-11-05" },
+    { title: "Бійцівський клуб", cinema: "Планета кіно", hall: "Зал 1, Зал 2", startDate: "2024-11-04" },
+    { title: "Пірати Карибського моря", cinema: "Сінема сіті", hall: "Зал 2", startDate: "2024-11-07" },
 ];
 
 const SHOW_DURATION_DAYS = 10;
