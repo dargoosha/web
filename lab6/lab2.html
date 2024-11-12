@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lab2.css">
+    <link rel="stylesheet" href="css/menu.css"> 
+
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №7. Основи моделі DOM та події</h1>
+            <h2>Виконала студентка групи КН-32 Герасимчук Д. С.</h2>
+        </header>
+        <ul class="menu-main">
+            <li><a href="lab1.html">Лабораторна робота №6</a></li>
+            <li><a href="lab2.html">Лабораторна робота №7</a></li>
+            <li><a href="lab3.html">Лабораторна робота №8</a></li>
+        </ul>
+        <h2>Завдання</h2>
+        <div class="b-div-zadanie">
+            Завдання 1.<br>
+            На сторінці є блоки div, які містять текст. Обійдіть всі блоки div і
+            сформуйте список елементами якого буде вміст блоків.
+        </div>
+        <div class="b-div-zadanie" id="content-list" style="display: none;">
+            <h3>Вміст блоків div:</h3>
+            <ul id="divContents"></ul>
+        </div>  
+        <button class="b-button" onclick="createDivList()">Створити список</button>
+         
+        <div class="b-div-zadanie">
+            Завдання 2.<br>
+            Дана таблиця з числами. При натисканні на кнопку необхідно
+            виокремити кольорами всі додатні та від’ємні числа. Окремо позначити
+            максимальні та мінімальні значення серед додатних та від’ємних.
+        </div> 
+        <div class="b-div-zadanie">
+            <table id="numbers">
+                <tr>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>-7</td>
+                </tr>
+                <tr>
+                    <td>-6</td>
+                    <td>-2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-8</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <button class="b-button" onclick="highlight()">Виокремити</button>
+        </div>
+    </main>
+    <script src="js/lab2.js"></script>
+</body>
+</html>

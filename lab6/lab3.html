@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lab3.css">
+    <link rel="stylesheet" href="css/menu.css"> 
+
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №8. Основи моделі DOM та події</h1>
+            <h2>Виконала студентка групи КН-32 Герасимчук Д. С.</h2>
+        </header>
+        <ul class="menu-main">
+            <li><a href="lab1.html">Лабораторна робота №6</a></li>
+            <li><a href="lab2.html">Лабораторна робота №7</a></li>
+            <li><a href="lab3.html">Лабораторна робота №8</a></li>
+        </ul>
+        <h2>Завдання</h2>
+        <div class="b-div-zadanie">
+            Завдання.<br>
+            Базовий клас: Стіл (поля: назва, площа S в см)<br>
+            Метод: Вартість С = S2 / 3 + k, де k - коефіцієнт.<br>
+            Нащадок: Письмовий (поле - використовуваний матеріал, вартість
+            обробки)<br>
+            Зміни в нащадках: Знайти вартість обробки, яка визначається як 10% від
+            вартості і повну вартість.
+        </div>
+    
+        <div class="main-form">
+            <div class="main-container">
+                <form id="tableForm" class="form">
+                    <label for="tableName">Назва:</label>
+                    <input type="text" id="tableName" required>
+
+                    <label for="area">Площа S (см<sup>2</sup>):</label>
+                    <input type="number" id="area" min="1" required>
+
+                    <label for="type">Тип столу:</label>
+                    <select id="type">
+                        <option value="regular">Звичайний</option>
+                        <option value="writing">Письмовий</option>
+                    </select>
+
+                    <label for="material">Матеріал (для письмового столу):</label>
+                    <input type="text" id="material" disabled>
+
+                    <button type="button" onclick="calculateTablePrice()">Знайти вартість</button>
+                </form>
+
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/lab3.js"></script>
+</body>
+</html>

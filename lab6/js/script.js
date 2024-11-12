@@ -39,16 +39,16 @@ function displayMoviesInfo() {
         const today = new Date().toISOString().split("T")[0];
         
         if (daysUntilEnd === null) {
-            html += `<p style='background:#ccedff'>Показ фільму <strong>${movie.title}</strong> ще не почався.</p>`;
+            html += `<p style='background:#ccedff'>Показ фільму <strong>"${movie.title}"</strong> ще не почався.</p>`;
         } else if (daysUntilEnd === -1) {
-            html += `<p style='background:#bbaaaa'>Показ фільму <strong>${movie.title}</strong> завершено.</p>`;
+            html += `<p style='background:#bbaaaa'>Показ фільму <strong>"${movie.title}"</strong> завершено.</p>`;
         } else {
             if (movie.startDate === today) {
-                html += `<p style='background:#c1f3b3'>Сьогодні у кінотеатрі <strong>${movie.cinema} ${movie.hall}</strong> йде фільм <strong>${movie.title}</strong>.</p>`;
+                html += `<p style='background:#c1f3b3'>Сьогодні у кінотеатрі <strong>" ${movie.cinema}" ${movie.hall}</strong> йде фільм <strong>"${movie.title}"</strong>.</p>`;
             }
-            html += `<p>Фільм <strong>${movie.title}</strong> у кінотеатрі <strong>${movie.cinema}</strong> йде ще ${daysUntilEnd} дні(в).</p>`;
+            html += `<p>Фільм <strong>"${movie.title}"</strong> у кінотеатрі <strong>"${movie.cinema}"</strong> йде ще ${daysUntilEnd} дні(в).</p>`;
             if (!movie.hall) {
-                html += `<p style='color: #cc0000'>Увага! У кінотеатрі <strong>${movie.cinema}</strong> лише один зал.</p>`;
+                html += `<p style='color: #cc0000'>Увага! У кінотеатрі <strong>"${movie.cinema}"</strong> лише один зал.</p>`;
             }
         }
     });

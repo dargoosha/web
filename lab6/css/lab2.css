@@ -1,0 +1,31 @@
+
+table {
+    width: 20%; 
+    margin: 20px 0;
+    border-collapse: collapse;
+    box-shadow: 0 4px 4px rgba(45, 45, 45, 0.2);
+    th, td {
+        border: 1px solid #555555;
+        padding: 12px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+/* Максимальне та мінімальне значення */
+.max-positive {
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+.min-negative {
+    font-weight: bold;
+    background-color: lightcoral;
+}
