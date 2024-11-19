@@ -1,0 +1,23 @@
+<div class="matrix-container">
+    <h3>Введіть елементи матриці 3x3:</h3>
+    
+    <form (ngSubmit)="calculateColumnSums()">
+      <div class="matrix">
+        <div class="row" *ngFor="let row of matrix; let rowIndex = index">
+          <div class="cell" *ngFor="let col of row; let colIndex = index">
+            <input type="number" [(ngModel)]="matrix[rowIndex][colIndex]" name="cell-{{rowIndex}}-{{colIndex}}" required />
+          </div>
+        </div>
+      </div>
+  
+      <button type="submit">Обчислити суму стовпців</button>
+    </form>
+  
+    <div *ngIf="columnSums.length > 0">
+      <h3>Суми елементів кожного стовпця:</h3>
+      <ul>
+        <li *ngFor="let sum of columnSums; let i = index">Стовпець {{i + 1}}: {{sum}}</li>
+      </ul>
+    </div>
+  </div>
+  

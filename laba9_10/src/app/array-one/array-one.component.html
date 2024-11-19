@@ -1,0 +1,26 @@
+<div class="array-display">
+    <div>
+      <label for="arraySize">Виберіть розмір масиву (1-8):</label>
+      <select id="arraySize" [(ngModel)]="arraySize" (change)="generateArray()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+    <h3>Масив:</h3>
+    <p>{{ array.join(', ') }}</p>
+  
+    <p>Кількість від'ємних чисел: {{ negativeCount }}</p> 
+  
+    
+  
+    <div>
+      <button (click)="generateArray()">Генерувати масив</button>
+    </div>
+  </div>
+  

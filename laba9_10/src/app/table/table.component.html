@@ -1,0 +1,59 @@
+<!-- table.component.html -->
+<div class="main-form">
+    <div class="main-container">
+      <form class="form" (ngSubmit)="calculatePrice()">
+        <div class="form-group">
+          <label for="tableName">Назва:</label>
+          <input 
+            type="text" 
+            id="tableName" 
+            [(ngModel)]="table.name" 
+            name="tableName" 
+            required 
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="area">Площа S (см<sup>2</sup>):</label>
+          <input 
+            type="number" 
+            id="area" 
+            [(ngModel)]="table.area" 
+            name="area" 
+            min="1" 
+            required 
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="type">Тип столу:</label>
+          <select 
+            id="type" 
+            [(ngModel)]="tableType" 
+            name="type" 
+            (change)="onTableTypeChange($event)"
+          >
+            <option value="regular">Звичайний</option>
+            <option value="writing">Письмовий</option>
+          </select>
+        </div>
+  
+        <div class="form-group" *ngIf="tableType === 'writing'">
+          <label for="material">Матеріал (для письмового столу):</label>
+          <input 
+            type="text" 
+            id="material" 
+            [(ngModel)]="writingTable.material" 
+            name="material" 
+          />
+        </div>
+  
+        <button type="submit">Знайти вартість</button>
+      </form>
+  
+      <div *ngIf="price !== null" class="result">
+        <h3>Вартість: {{ price | currency:'UAH' }}</h3>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,23 @@
+.profile-menu {
+    width: 100%;
+    display: flex;
+    border-radius: 0 0 4px 4px;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  .profile-menu-link {
+    padding: 20px 16px;
+    color: var(--side-title);
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .profile-menu-link.active,
+  .profile-menu-link:hover {
+    color: #fff;
+    background-color:#660000;
+    border-bottom: 3px solid #ffdaad;
+  }
+  

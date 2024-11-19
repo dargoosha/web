@@ -3,7 +3,7 @@ class Table {
     constructor(name, area) {
         this.name = name;
         this.area = area;
-        this.k = 1;   
+        this.k = 500;   
     }
 
     getPrice() {
