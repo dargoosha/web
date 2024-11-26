@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Itim&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pangolin&display=swap');
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    background-color: #fefcfb;
+    color: #333;
+    font-family: 'Pangolin', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.b-header {
+    background-color: #f9e3dc; 
+    color: #4a4a4a; 
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #f2c2b6; 
+}
+
+.b-header h1, .b-header h2 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.zadanie {
+    background-color: #eaf4f4; 
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 25px;
+}
+
+h1 {
+    color: #332f44;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    background-color: #f4f9f9;
+    border: 2px solid #d6eaea; 
+    border-radius: 12px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.column h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #4a7c59;
+}
+
+.group {
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #ffe5d9; 
+    border-radius: 8px;
+    padding: 10px;
+    color: #4a4a4a;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
